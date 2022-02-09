@@ -1,12 +1,8 @@
-# Welcome to IoT-Fuzzing
+# embedded-fuzzing-tutorials
 
 A list of resources (papers, books, talks, frameworks, tools) for understanding fuzzing for IoT/embedded devices.
 
 ## Contents
-- [Papers](#papers)
-	- [State-of-the-Art Fuzzers](#state-of-the-art-fuzzers)
-	- [IoT/Embedded Devices Fuzzing](#iotembedded-devices-fuzzing)
-	- [Firmware Emulators](#firmware-emulators)
 - [Books](#books)
 - [Videos](#videos)
 - [Tutorials and Blogs](#tutorials-and-blogs)
@@ -18,20 +14,6 @@ A list of resources (papers, books, talks, frameworks, tools) for understanding 
 	- [Re-hosting frameworks](#re-hosting-frameworks)
 	- [Emulators](#emulators)
 	- [IoT Testbeds](#iot-testbeds)
-
-## Papers
-
-### State-of-the-Art Fuzzers
-
-TODO
-
-### IoT/Embedded Devices Fuzzing
-
-TODO
-
-### Firmware Emulators
-
-TODO
 
 ## Books
 
@@ -55,7 +37,7 @@ TODO
 
 [Hack In The Box Security Conference - VIRTUAL LAB: Qiling Framework: Build a Fuzzer Based on a 1day Bug - Lau Kai Jern](https://youtu.be/e3_T3KLh2NU)
 
-## Tutorials and blogs
+## Tutorials
 
 [afl-unicorn: Fuzzing Arbitrary Binary Code](https://medium.com/hackernoon/afl-unicorn-fuzzing-arbitrary-binary-code-563ca28936bf)
 
@@ -70,11 +52,13 @@ TODO
 
 ### Fuzzers
 
+Curated repository for [directed-fuzzing](https://github.com/strongcourage/awesome-directed-fuzzing) research 
+
 [AFL](https://github.com/google/AFL)
 
-[AFLplusplus](https://github.com/AFLplusplus/AFLplusplus)
+[AFL++](https://github.com/AFLplusplus/AFLplusplus)
 
-[AFLgo](https://github.com/aflgo/aflgo)
+[AFLGo](https://github.com/aflgo/aflgo)
 
 [afl-unicorn](https://github.com/Battelle/afl-unicorn) *Note:* Integrates AFL with Unicorn Engine.
 
@@ -84,9 +68,11 @@ TODO
 
 [Triforce-AFL](https://github.com/nccgroup/TriforceAFL) *Note:* Integrates QEMU with AFL.
 
-### Benchmarking Fuzzers
+### Fuzzing Benchmarking
 
 [Google FuzzBench](https://github.com/google/fuzzbench)
+
+[ProFuzzBench](https://github.com/profuzzbench/profuzzbench)
 
 [LAVA](https://github.com/panda-re/lava)
 
@@ -102,7 +88,7 @@ TODO
 
 [Capstone](https://www.capstone-engine.org/)
 
-### Symbolic execution
+### Symbolic Execution
 
 [S2E](https://github.com/S2E/s2e)
 
@@ -110,7 +96,9 @@ TODO
 
 [Z3 - SMT solver](https://github.com/Z3Prover/z3)
 
-### Re-hosting Frameworks
+### Rehosting Frameworks
+
+There is a research community built around the idea of rehosting. They are maintaining a [webpage](https://rehosti.ng/) to present the state-of-the-art    
 
 [HALucinator](https://github.com/embedded-sec/halucinator)
 
