@@ -8,6 +8,7 @@
 - [Labels Indexes](#labels-indexes)
     - [By Type](#by-type)
     - [By Purpose](#by-purpose)
+- [Papers](#papers)
 - [Resources](#resources)
 - [Contribution](#contribution)
 - [Credits](#credits)
@@ -57,6 +58,18 @@ All resources are alphabetically organized and labeled, making it simple to loca
 - ![Purpose: instrumentation](https://img.shields.io/badge/Purpose-instrumentation-blue)
 - ![Purpose: symbolic%20execution](https://img.shields.io/badge/Purpose-symbolic%20execution-blue)
 - ![Purpose: synthetic%20bugs](https://img.shields.io/badge/Purpose-synthetic%20bugs-blue)
+
+## Papers
+
+- **[JetSet](https://www.usenix.org/system/files/sec21-johnson.pdf)**
+    - <details> <summary>Click to see the abstract!</summary>: The ability to execute code in an emulator is a fundamental part of modern vulnerability testing. Unfortunately, this poses a challenge for many embedded systems, where firmware expects to interact with hardware devices specific to the target. Getting embedded system firmware to run outside its native environment, termed rehosting, requires emulating these hardware devices with enough accuracy to convince the firmware that it is executing on the target hardware. However, full fidelity emulation of target devices (which requires considerable engineering effort) may not be necessary to boot the firmware to a point of interest for an analyst (for example, a point where fuzzer input can be injected). We hypothesized that, for the firmware to boot successfully, it is sufficient to emulate only the behavior expected by the firmware, and that this behavior could be inferred automatically. To test this hypothesis, we developed and implemented Jetset, a system that uses symbolic execution to infer what behavior firmware expects from a target device. Jetset can generate devices models for hardware peripherals in C, allowing an analyst to boot the firmware in an emulator (e.g., QEMU). We successfully applied Jetset to thirteen distinct pieces of firmware together representing three architectures, three application domains (power grid, avionics, and consumer electronics), and five different operating systems. We also demonstrate how Jetset-assisted rehosting facilitates fuzztesting, a common security analysis technique, on an avionics embedded system, in which we found a previously unknown privilege escalation vulnerability </details>
+    - Venue: USENIX 2021
+    - Purpose: ![Purpose: firmware%20rehosting](https://img.shields.io/badge/Purpose-firmware%20rehosting-blue)
+- **[SoK: Enabling Security Analyses of Embedded Systems via Rehosting](https://megele.io/rehosting-sok-asiaccs2021.pdf)**
+    - <details> <summary>Click to see the abstract!</summary>: Closely monitoring the behavior of a software system during its execution enables developers and analysts to observe, and ultimately understand, how it works. This kind of dynamic analysis can be instrumental to reverse engineering, vulnerability discovery, exploit development, and debugging. While these analyses are typically wellsupported for homogeneous desktop platforms (e.g., x86 desktop PCs), they can rarely be applied in the heterogeneous world of embedded systems. One approach to enable dynamic analyses of embedded systems is to move software stacks from physical systems into virtual environments that sufficiently model hardware behavior. This process which we call “rehosting” poses a significant research challenge with major implications for security analyses. Although rehosting has traditionally been an unscientific and ad-hoc endeavor undertaken by domain experts with varying time and resources at their disposal, researchers are beginning to address rehosting challenges systematically and in earnest. In this paper, we establish that emulation is insufficient to conduct large-scale dynamic analysis of real-world hardware systems and present rehosting as a firmwarecentric alternative. Furthermore, we taxonomize preliminary rehosting efforts, identify the fundamental components of the rehosting process, and propose directions for future research. </details>
+    - Venue: ASIACCS 2021
+    - Purpose: ![Purpose: firmware%20rehosting](https://img.shields.io/badge/Purpose-firmware%20rehosting-blue)
+
 
 ## Resources
 

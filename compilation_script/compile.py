@@ -132,6 +132,41 @@ def create_resource_item(
 """
 
 
+def create_paper_item(
+    name: str,
+    url: str,
+    abstract: str,
+    venue: str,
+    purpose: typing.Optional[typing.List[str]],
+) -> str:
+    """Create a Markdown list element based on the paper information.
+
+    Args:
+        name (str): Name
+        url (str): URL
+        abstract (str): Abstract
+        venue (str): Venue
+        purpose (typing.Optional[typing.List[str]]): Purpose labels
+
+    Returns:
+        str: Markdown list element
+    """
+    if url is not None:
+        title = f"[{name}]({url})"
+    else:
+        title = name
+
+    purpose_labels = (create_list_of_shields(
+        purpose, make_purpose_label_shield, prefix="", suffix=" ")
+                      if purpose else "")
+
+    return f"""\
+- **{title}**
+    - <details> <summary>Click to see the abstract!</summary>: {abstract} </details>
+    - Venue: {venue}
+    - Purpose: {purpose_labels}
+"""
+
 def read_sorted_resources_as_df() -> pandas.DataFrame:
     """Read and sort the CSV file with resources.
 
@@ -145,8 +180,20 @@ def read_sorted_resources_as_df() -> pandas.DataFrame:
 
     return resources_df
 
+def read_sorted_papers_as_df () -> pandas.DataFrame:
+    """Read and sort the CSV file with resources.
 
-def dump_to_readme(resources: str, type_labels: str,
+    Returns:
+        pandas.DataFrame: pandas dataframe with resources
+    """
+    papers_df = pandas.read_csv("../papers.csv")
+    papers_df.sort_values(by="Name",
+                             key=lambda col: col.str.lower(),
+                             inplace=True)
+
+    return papers_df
+
+def dump_to_readme(papers: str, resources: str, type_labels: str,
                    purpose_labels: str) -> None:
     """Dump the information into README.md.
 
@@ -159,6 +206,7 @@ def dump_to_readme(resources: str, type_labels: str,
         template = template_file.read()
 
     readme_content = template.format(
+        papers=papers,
         resources=resources,
         type_labels=type_labels,
         purpose_labels=purpose_labels,
@@ -171,10 +219,28 @@ def dump_to_readme(resources: str, type_labels: str,
 def main() -> None:
     """Run main functionality."""
     resources_df = read_sorted_resources_as_df()
+    papers_df = read_sorted_papers_as_df()
 
+    papers = []
     resources = []
     type_labels = []
     purpose_labels = []
+    
+    for _, row in papers_df.iterrows():
+        # Keep track of topics
+        purpose = None
+        if not pandas.isna(row["Topics"]):
+            purpose = row["Topics"].split(", ")
+            purpose_labels.extend(purpose)
+
+        # Create element
+        name = row["Name"]
+        url = row["URL"] if not pandas.isna(row["URL"]) else None
+        abstract = row["Abstract"]
+        venue = row["Venue"]
+        papers.append(
+            create_paper_item(name, url, abstract, venue, purpose))
+
     for _, row in resources_df.iterrows():
         # Keep track of types
         types = None
@@ -195,13 +261,14 @@ def main() -> None:
         resources.append(
             create_resource_item(name, url, description, types, purpose))
 
+    inline_papers = "".join(papers)
     inline_resources = "".join(resources)
     type_labels_list = create_list_of_shields(type_labels,
                                               make_type_label_shield)
     purpose_labels_list = create_list_of_shields(purpose_labels,
                                                  make_purpose_label_shield)
 
-    dump_to_readme(inline_resources, type_labels_list, purpose_labels_list)
+    dump_to_readme(inline_papers, inline_resources, type_labels_list, purpose_labels_list)
 
 
 if __name__ == "__main__":
