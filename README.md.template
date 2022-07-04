@@ -8,6 +8,7 @@
 - [Labels Indexes](#labels-indexes)
     - [By Type](#by-type)
     - [By Purpose](#by-purpose)
+- [Papers](#papers)
 - [Resources](#resources)
 - [Contribution](#contribution)
 - [Credits](#credits)
@@ -29,6 +30,12 @@ All resources are alphabetically organized and labeled, making it simple to loca
 ### By Purpose
 
 {purpose_labels}
+
+## Papers
+
+| Paper Title | Abstract | Venue | Publication Date |
+| --- | --- | --- | --- |
+{papers}
 
 ## Resources
 
