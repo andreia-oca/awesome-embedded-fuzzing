@@ -7,23 +7,23 @@ GynvaelEN - Hacking Livestream #17: Basics of fuzzing,https://youtu.be/BrDujogxY
 GynvaelEN - Hacking Livestream #18: Genetic fuzzing,https://youtu.be/JhsHGms_7JQ,fuzzing 101 tutorial,"video, tutorial",fuzzing
 GynvaelEN - Hacking Livestream #19: Genetic fuzzing,https://youtu.be/HN_tI601jNU,fuzzing 101 tutorial,"video, tutorial",fuzzing
 Analyzing Programs with Z3,https://youtu.be/ruNFcH-KibY,symbolic execution with Z3,"video, tutorial",symbolic execution
-Hack In The Box Security Conference - VIRTUAL LAB: Qiling Framework: Build a Fuzzer Based on a 1day Bug - Lau Kai Jern,https://youtu.be/e3_T3KLh2NU,Workshop about Qiling (emulator),demo,emulation
-afl-unicorn: Fuzzing Arbitrary Binary Code,https://medium.com/hackernoon/afl-unicorn-fuzzing-arbitrary-binary-code-563ca28936bf,How to use afl-unicorn for fuzzing,"blog post, tutorial","emulation, fuzzing"
-afl-unicorn: Part 2 Fuzzing the ‘Unfuzzable’,https://hackernoon.com/afl-unicorn-part-2-fuzzing-the-unfuzzable-bea8de3540a5,How to use afl-unicorn for fuzzing,"blog post, tutorial","emulation, fuzzing"
-"Analyzing a buffer overflow in the DLINK DIR-645 with Qiling framework, Part I",https://github.com/nahueldsanchez/blogpost_qiling_dlink_1,Reverse enginerring for DLINK DIR645,"tutorial, reverse engineering","emulation, fuzzing firmware"
-"Analyzing a buffer overflow in the DLINK DIR-645 with Qiling framework, Part II",https://github.com/nahueldsanchez/blogpost_qiling_dlink_2,Reverse enginerring for DLINK DIR645,"tutorial, reverse engineering","emulation, fuzzing firmware"
-Awesome list for directed-fuzzing,https://github.com/strongcourage/awesome-directed-fuzzing,Awesome list for directed-fuzzing,awesome,directed fuzzing
-AFL,https://github.com/google/AFL,State-of-the-art fuzzer,tool,fuzzing
-AFL++,https://github.com/AFLplusplus/AFLplusplus,State-of-the-art fuzzer,tool,fuzzing
-AFLGo,https://github.com/aflgo/aflgo,Directed fuzzer,tool,directed fuzzing
+Hack In The Box Security Conference - VIRTUAL LAB: Qiling Framework: Build a Fuzzer Based on a 1day Bug - Lau Kai Jern,https://youtu.be/e3_T3KLh2NU,workshop about Qiling (emulator),demo,emulation
+afl-unicorn: Fuzzing Arbitrary Binary Code,https://medium.com/hackernoon/afl-unicorn-fuzzing-arbitrary-binary-code-563ca28936bf,tutorial for afl-unicorn,"blog post, tutorial","emulation, fuzzing"
+afl-unicorn: Part 2 Fuzzing the ‘Unfuzzable’,https://hackernoon.com/afl-unicorn-part-2-fuzzing-the-unfuzzable-bea8de3540a5,tutorial for afl-unicorn,"blog post, tutorial","emulation, fuzzing"
+"Analyzing a buffer overflow in the DLINK DIR-645 with Qiling framework, Part I",https://github.com/nahueldsanchez/blogpost_qiling_dlink_1,reverse enginerring for DLINK DIR645,"tutorial, reverse engineering","emulation, fuzzing firmware"
+"Analyzing a buffer overflow in the DLINK DIR-645 with Qiling framework, Part II",https://github.com/nahueldsanchez/blogpost_qiling_dlink_2,reverse enginerring for DLINK DIR645,"tutorial, reverse engineering","emulation, fuzzing firmware"
+Awesome list for directed-fuzzing,https://github.com/strongcourage/awesome-directed-fuzzing,awesome list for directed-fuzzing,awesome,directed fuzzing
+AFL,https://github.com/google/AFL,state-of-the-art fuzzer,tool,fuzzing
+AFL++,https://github.com/AFLplusplus/AFLplusplus,state-of-the-art fuzzer,tool,fuzzing
+AFLGo,https://github.com/aflgo/aflgo,directed fuzzer,tool,directed fuzzing
 afl-unicorn,https://github.com/Battelle/afl-unicorn,AFL-based fuzzer integrated with Unicorn,tool,fuzzing firmware
 unicornafl,https://github.com/AFLplusplus/unicornafl,AFL-based fuzzer integrated with Unicorn,tool,fuzzing firmware
-hal-fuzz,https://github.com/ucsb-seclab/hal-fuzz,Embedded fuzzer based in HALucinator,tool,fuzzing firmware
+hal-fuzz,https://github.com/ucsb-seclab/hal-fuzz,embedded fuzzer based in HALucinator,tool,fuzzing firmware
 Triforce-AFL,https://github.com/nccgroup/TriforceAFL,AFL/QEMU fuzzing with full-system emulation.,tool,fuzzing firmware
-Google FuzzBench,https://github.com/google/fuzzbench,Benchmark for fuzzers,benchmark,"benchmark, fuzzing x86 binaries"
-ProFuzzBench,https://github.com/profuzzbench/profuzzbench,Benchmark for fuzzers focused on network protocols,benchmark,"benchmark, fuzzing network protocols"
-LAVA,https://github.com/panda-re/lava,Benchmark for fuzzers,benchmark,"benchmark, fuzzing, synthetic bugs"
-Magma,https://github.com/HexHive/magma,Benchmark for fuzzers,benchmark,"benchmark, fuzzing, synthetic bugs"
+Google FuzzBench,https://github.com/google/fuzzbench,benchmark for fuzzers,benchmark,"benchmark, fuzzing x86 binaries"
+ProFuzzBench,https://github.com/profuzzbench/profuzzbench,benchmark for fuzzers focused on network protocols,benchmark,"benchmark, fuzzing network protocols"
+LAVA,https://github.com/panda-re/lava,benchmark for fuzzers,benchmark,"benchmark, fuzzing, synthetic bugs"
+Magma,https://github.com/HexHive/magma,benchmark for fuzzers,benchmark,"benchmark, fuzzing, synthetic bugs"
 Avatar<sup>2,https://github.com/avatartwo/avatar2,dynamic analysis of embedded devices' firmware!,tool,binary analysis
 angr,https://github.com/angr/angr,binary analysis platform,tool,binary analysis
 LIEF,https://lief.quarkslab.com/,library to do binary instrumentation,library,instrumentation
@@ -31,7 +31,7 @@ Capstone,https://www.capstone-engine.org/,disassembly platform,tool,binary disas
 S2E,https://github.com/S2E/s2e,symbolic execution,tool,symbolic execution
 Triton,https://triton.quarkslab.com/,symbolic execution,tool,symbolic execution
 Z3 - SMT solver,https://github.com/Z3Prover/z3,symbolic execution,tool,symbolic execution
-Firmware Rehosting Community,https://rehosti.ng/,Firmware Rehosting Community,community,firmware rehosting
+Firmware Rehosting Community,https://rehosti.ng/,firmware Rehosting Community,community,firmware rehosting
 HALucinator,https://github.com/embedded-sec/halucinator,,tool,firmware rehosting
 P2IM,https://github.com/RiS3-Lab/p2im,,tool,"embedded fuzzing, firmware rehosting"
 DICE,https://github.com/RiS3-Lab/DICE-DMA-Emulation,,tool,"embedded fuzzing, firmware rehosting"
@@ -42,7 +42,7 @@ Unicorn,https://github.com/unicorn-engine/unicorn,,emulator,emulation
 Qemu,https://www.qemu.org/,,emulator,emulation
 FIT IoT-LAB,https://www.iot-lab.info/,,testbed,firmware testing
 Renode,https://renode.io/,,testbed,firmware testing
-JetSet,https://www.youtube.com/watch?v=xp3gTOS0Zq8&ab_channel=USENIX,Presentation for Jetset,video,firmware rehosting
-JetSet,https://github.com/aerosec/jetset,Repository for JetSet,tool,firmware rehosting
-Symbolic Execution Summary,https://docs.google.com/presentation/d/1E3uE-4mYpenw0s40rtMbIdxj3fJgC79aHCeiIlJSY5Y/edit#slide=id.g11285b0bdfc_0_310,Presentation on Symbolic Execution ,presentation,symbolic execution
-Maat,https://maat.re/,Open-source symbolic execution framework,tool,symbolic execution
+JetSet,https://www.youtube.com/watch?v=xp3gTOS0Zq8&ab_channel=USENIX,presentation for Jetset,video,firmware rehosting
+JetSet,https://github.com/aerosec/jetset,repository for JetSet,tool,firmware rehosting
+Symbolic Execution Summary,https://docs.google.com/presentation/d/1E3uE-4mYpenw0s40rtMbIdxj3fJgC79aHCeiIlJSY5Y/edit#slide=id.g11285b0bdfc_0_310,presentation on Symbolic Execution ,presentation,symbolic execution
+Maat,https://maat.re/,symbolic execution framework,tool,symbolic execution
