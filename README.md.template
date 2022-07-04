@@ -1,0 +1,45 @@
+# Awesome Embedded Fuzzing
+
+![Last Update](https://img.shields.io/github/last-commit/andreia-oca/awesome-embedded-fuzzing)
+
+---
+
+- [Description](#description)
+- [Labels Indexes](#labels-indexes)
+    - [By Type](#by-type)
+    - [By Purpose](#by-purpose)
+- [Resources](#resources)
+- [Contribution](#contribution)
+- [Credits](#credits)
+
+---
+
+## Description
+
+A **list of helpful fuzzing tools and research materials** for embedded applications can be found in this repository.
+
+All resources are alphabetically organized and labeled, making it simple to locate them simply searching one item from the index on the entire page (with `CTRL+F`). The ones not having a link attached are present in the `documents/` folder.
+
+## Labels Indexes
+
+### By Type
+
+{type_labels}
+
+### By Purpose
+
+{purpose_labels}
+
+## Resources
+
+{resources}
+
+## Contribution
+
+1. Edit the `resources.csv` file.
+2. Push the changes into the GitHub repository.
+3. Wait for the GitHub action to automatically recompile `README.md`.
+
+## Credits
+
+The template is inspired from this [repository](https://github.com/CyberReasoningSystem/awesome-binary-analysis).
