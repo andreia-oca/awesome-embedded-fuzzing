@@ -137,7 +137,7 @@ def create_paper_item(
     url: str,
     abstract: str,
     venue: str,
-    purpose: typing.Optional[typing.List[str]],
+    date: str,
 ) -> str:
     """Create a Markdown list element based on the paper information.
 
@@ -146,7 +146,7 @@ def create_paper_item(
         url (str): URL
         abstract (str): Abstract
         venue (str): Venue
-        purpose (typing.Optional[typing.List[str]]): Purpose labels
+        date (str): Publication Date
 
     Returns:
         str: Markdown list element
@@ -156,15 +156,8 @@ def create_paper_item(
     else:
         title = name
 
-    purpose_labels = (create_list_of_shields(
-        purpose, make_purpose_label_shield, prefix="", suffix=" ")
-                      if purpose else "")
-
     return f"""\
-- **{title}**
-    <details> <summary>Click to see the abstract!</summary> {abstract} </details>
-    - Venue: {venue}
-    - Purpose: {purpose_labels}
+| **{title}** | <details> <summary>Click to see the abstract!</summary> {abstract} </details> | {venue} | {date} |
 """
 
 def read_sorted_resources_as_df() -> pandas.DataFrame:
@@ -227,19 +220,14 @@ def main() -> None:
     purpose_labels = []
     
     for _, row in papers_df.iterrows():
-        # Keep track of topics
-        purpose = None
-        if not pandas.isna(row["Topics"]):
-            purpose = row["Topics"].split(", ")
-            purpose_labels.extend(purpose)
-
         # Create element
         name = row["Name"]
         url = row["URL"] if not pandas.isna(row["URL"]) else None
         abstract = row["Abstract"]
         venue = row["Venue"]
+        date = row["Publication Date"]
         papers.append(
-            create_paper_item(name, url, abstract, venue, purpose))
+            create_paper_item(name, url, abstract, venue, date))
 
     for _, row in resources_df.iterrows():
         # Keep track of types
