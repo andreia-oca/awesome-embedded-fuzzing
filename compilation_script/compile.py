@@ -162,7 +162,7 @@ def create_paper_item(
 
     return f"""\
 - **{title}**
-    - <details> <summary>Click to see the abstract!</summary>: {abstract} </details>
+    <details> <summary>Click to see the abstract!</summary> {abstract} </details>
     - Venue: {venue}
     - Purpose: {purpose_labels}
 """
