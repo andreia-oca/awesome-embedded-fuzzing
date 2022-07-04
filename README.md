@@ -1,5 +1,7 @@
 # Awesome Embedded Fuzzing
 
+![Last Update](https://img.shields.io/github/last-commit/andreia-oca/awesome-embedded-fuzzing)
+
 ---
 
 - [Description](#description)
@@ -22,8 +24,6 @@ All resources are alphabetically organized and labeled, making it simple to loca
 
 ### By Type
 
-- ![Type: ASIACCS%202021](https://img.shields.io/badge/Type-ASIACCS%202021-lightgrey)
-- ![Type: USENIX%202021](https://img.shields.io/badge/Type-USENIX%202021-lightgrey)
 - ![Type: awesome](https://img.shields.io/badge/Type-awesome-lightgrey)
 - ![Type: benchmark](https://img.shields.io/badge/Type-benchmark-lightgrey)
 - ![Type: blog%20post](https://img.shields.io/badge/Type-blog%20post-lightgrey)
@@ -33,7 +33,6 @@ All resources are alphabetically organized and labeled, making it simple to loca
 - ![Type: demo](https://img.shields.io/badge/Type-demo-lightgrey)
 - ![Type: emulator](https://img.shields.io/badge/Type-emulator-lightgrey)
 - ![Type: library](https://img.shields.io/badge/Type-library-lightgrey)
-- ![Type: paper](https://img.shields.io/badge/Type-paper-lightgrey)
 - ![Type: presentation](https://img.shields.io/badge/Type-presentation-lightgrey)
 - ![Type: reverse%20engineering](https://img.shields.io/badge/Type-reverse%20engineering-lightgrey)
 - ![Type: testbed](https://img.shields.io/badge/Type-testbed-lightgrey)
@@ -43,20 +42,17 @@ All resources are alphabetically organized and labeled, making it simple to loca
 
 ### By Purpose
 
-- ![Purpose: IoT](https://img.shields.io/badge/Purpose-IoT-blue)
 - ![Purpose: benchmark](https://img.shields.io/badge/Purpose-benchmark-blue)
 - ![Purpose: binary%20analysis](https://img.shields.io/badge/Purpose-binary%20analysis-blue)
+- ![Purpose: binary%20disassembly](https://img.shields.io/badge/Purpose-binary%20disassembly-blue)
 - ![Purpose: directed%20fuzzing](https://img.shields.io/badge/Purpose-directed%20fuzzing-blue)
-- ![Purpose: disassembler](https://img.shields.io/badge/Purpose-disassembler-blue)
 - ![Purpose: embedded%20fuzzing](https://img.shields.io/badge/Purpose-embedded%20fuzzing-blue)
 - ![Purpose: emulation](https://img.shields.io/badge/Purpose-emulation-blue)
-- ![Purpose: emulator](https://img.shields.io/badge/Purpose-emulator-blue)
-- ![Purpose: firmware](https://img.shields.io/badge/Purpose-firmware-blue)
 - ![Purpose: firmware%20rehosting](https://img.shields.io/badge/Purpose-firmware%20rehosting-blue)
+- ![Purpose: firmware%20testing](https://img.shields.io/badge/Purpose-firmware%20testing-blue)
 - ![Purpose: fuzzing](https://img.shields.io/badge/Purpose-fuzzing-blue)
 - ![Purpose: fuzzing%20firmware](https://img.shields.io/badge/Purpose-fuzzing%20firmware-blue)
 - ![Purpose: fuzzing%20network%20protocols](https://img.shields.io/badge/Purpose-fuzzing%20network%20protocols-blue)
-- ![Purpose: fuzzing%20via%20emulator](https://img.shields.io/badge/Purpose-fuzzing%20via%20emulator-blue)
 - ![Purpose: fuzzing%20x86%20binaries](https://img.shields.io/badge/Purpose-fuzzing%20x86%20binaries-blue)
 - ![Purpose: instrumentation](https://img.shields.io/badge/Purpose-instrumentation-blue)
 - ![Purpose: symbolic%20execution](https://img.shields.io/badge/Purpose-symbolic%20execution-blue)
@@ -75,7 +71,7 @@ All resources are alphabetically organized and labeled, making it simple to loca
 - **[afl-unicorn](https://github.com/Battelle/afl-unicorn)**
     - Description: AFL-based fuzzer integrated with Unicorn
     - Type: ![Type: tool](https://img.shields.io/badge/Type-tool-lightgrey)
-    - Purpose: ![Purpose: fuzzing%20via%20emulator](https://img.shields.io/badge/Purpose-fuzzing%20via%20emulator-blue)
+    - Purpose: ![Purpose: fuzzing%20firmware](https://img.shields.io/badge/Purpose-fuzzing%20firmware-blue)
 - **[afl-unicorn: Fuzzing Arbitrary Binary Code](https://medium.com/hackernoon/afl-unicorn-fuzzing-arbitrary-binary-code-563ca28936bf)**
     - Description: How to use afl-unicorn for fuzzing
     - Type: ![Type: blog%20post](https://img.shields.io/badge/Type-blog%20post-lightgrey) ![Type: tutorial](https://img.shields.io/badge/Type-tutorial-lightgrey)
@@ -115,7 +111,7 @@ All resources are alphabetically organized and labeled, making it simple to loca
 - **[Capstone](https://www.capstone-engine.org/)**
     - Description: disassembly platform
     - Type: ![Type: tool](https://img.shields.io/badge/Type-tool-lightgrey)
-    - Purpose: ![Purpose: disassembler](https://img.shields.io/badge/Purpose-disassembler-blue)
+    - Purpose: ![Purpose: binary%20disassembly](https://img.shields.io/badge/Purpose-binary%20disassembly-blue)
 - **[DICE](https://github.com/RiS3-Lab/DICE-DMA-Emulation)**
     - Description: nan
     - Type: ![Type: tool](https://img.shields.io/badge/Type-tool-lightgrey)
@@ -127,7 +123,7 @@ All resources are alphabetically organized and labeled, making it simple to loca
 - **[FIT IoT-LAB](https://www.iot-lab.info/)**
     - Description: nan
     - Type: ![Type: testbed](https://img.shields.io/badge/Type-testbed-lightgrey)
-    - Purpose: ![Purpose: IoT](https://img.shields.io/badge/Purpose-IoT-blue) ![Purpose: firmware](https://img.shields.io/badge/Purpose-firmware-blue)
+    - Purpose: ![Purpose: firmware%20testing](https://img.shields.io/badge/Purpose-firmware%20testing-blue)
 - **[Google FuzzBench](https://github.com/google/fuzzbench)**
     - Description: Benchmark for fuzzers
     - Type: ![Type: benchmark](https://img.shields.io/badge/Type-benchmark-lightgrey)
@@ -151,7 +147,7 @@ All resources are alphabetically organized and labeled, making it simple to loca
 - **[hal-fuzz](https://github.com/ucsb-seclab/hal-fuzz)**
     - Description: Embedded fuzzer based in HALucinator
     - Type: ![Type: tool](https://img.shields.io/badge/Type-tool-lightgrey)
-    - Purpose: ![Purpose: fuzzing%20via%20emulator](https://img.shields.io/badge/Purpose-fuzzing%20via%20emulator-blue)
+    - Purpose: ![Purpose: fuzzing%20firmware](https://img.shields.io/badge/Purpose-fuzzing%20firmware-blue)
 - **[HALucinator](https://github.com/embedded-sec/halucinator)**
     - Description: nan
     - Type: ![Type: tool](https://img.shields.io/badge/Type-tool-lightgrey)
@@ -159,10 +155,6 @@ All resources are alphabetically organized and labeled, making it simple to loca
 - **[JetSet](https://www.youtube.com/watch?v=xp3gTOS0Zq8&ab_channel=USENIX)**
     - Description: Presentation for Jetset
     - Type: ![Type: video](https://img.shields.io/badge/Type-video-lightgrey)
-    - Purpose: ![Purpose: firmware%20rehosting](https://img.shields.io/badge/Purpose-firmware%20rehosting-blue)
-- **[JetSet](https://www.usenix.org/system/files/sec21-johnson.pdf)**
-    - Description: Targeted Firmware Rehosting for Embedded Systems
-    - Type: ![Type: USENIX%202021](https://img.shields.io/badge/Type-USENIX%202021-lightgrey) ![Type: paper](https://img.shields.io/badge/Type-paper-lightgrey)
     - Purpose: ![Purpose: firmware%20rehosting](https://img.shields.io/badge/Purpose-firmware%20rehosting-blue)
 - **[JetSet](https://github.com/aerosec/jetset)**
     - Description: Repository for JetSet
@@ -211,23 +203,19 @@ All resources are alphabetically organized and labeled, making it simple to loca
 - **[Qemu](https://www.qemu.org/)**
     - Description: nan
     - Type: ![Type: emulator](https://img.shields.io/badge/Type-emulator-lightgrey)
-    - Purpose: ![Purpose: emulator](https://img.shields.io/badge/Purpose-emulator-blue)
+    - Purpose: ![Purpose: emulation](https://img.shields.io/badge/Purpose-emulation-blue)
 - **[Qiling](https://github.com/qilingframework/qiling)**
     - Description: nan
     - Type: ![Type: emulator](https://img.shields.io/badge/Type-emulator-lightgrey)
-    - Purpose: ![Purpose: emulator](https://img.shields.io/badge/Purpose-emulator-blue)
+    - Purpose: ![Purpose: emulation](https://img.shields.io/badge/Purpose-emulation-blue)
 - **[Renode](https://renode.io/)**
     - Description: nan
     - Type: ![Type: testbed](https://img.shields.io/badge/Type-testbed-lightgrey)
-    - Purpose: ![Purpose: IoT](https://img.shields.io/badge/Purpose-IoT-blue) ![Purpose: firmware](https://img.shields.io/badge/Purpose-firmware-blue)
+    - Purpose: ![Purpose: firmware%20testing](https://img.shields.io/badge/Purpose-firmware%20testing-blue)
 - **[S2E](https://github.com/S2E/s2e)**
     - Description: symbolic execution
     - Type: ![Type: tool](https://img.shields.io/badge/Type-tool-lightgrey)
     - Purpose: ![Purpose: symbolic%20execution](https://img.shields.io/badge/Purpose-symbolic%20execution-blue)
-- **[SoK: Enabling Security Analyses of Embedded Systems via Rehosting](https://megele.io/rehosting-sok-asiaccs2021.pdf)**
-    - Description: SoK: Enabling Security Analyses of Embedded Systems via Rehosting
-    - Type: ![Type: ASIACCS%202021](https://img.shields.io/badge/Type-ASIACCS%202021-lightgrey) ![Type: paper](https://img.shields.io/badge/Type-paper-lightgrey)
-    - Purpose: ![Purpose: firmware%20rehosting](https://img.shields.io/badge/Purpose-firmware%20rehosting-blue)
 - **[STÖK - Fuzzing for Beginners](https://youtu.be/O3hb6HV1ZQo)**
     - Description: fuzzing 101 tutorial
     - Type: ![Type: tutorial](https://img.shields.io/badge/Type-tutorial-lightgrey) ![Type: video](https://img.shields.io/badge/Type-video-lightgrey)
@@ -243,7 +231,7 @@ All resources are alphabetically organized and labeled, making it simple to loca
 - **[Triforce-AFL](https://github.com/nccgroup/TriforceAFL)**
     - Description: AFL/QEMU fuzzing with full-system emulation.
     - Type: ![Type: tool](https://img.shields.io/badge/Type-tool-lightgrey)
-    - Purpose: ![Purpose: fuzzing%20via%20emulator](https://img.shields.io/badge/Purpose-fuzzing%20via%20emulator-blue)
+    - Purpose: ![Purpose: fuzzing%20firmware](https://img.shields.io/badge/Purpose-fuzzing%20firmware-blue)
 - **[Triton](https://triton.quarkslab.com/)**
     - Description: symbolic execution
     - Type: ![Type: tool](https://img.shields.io/badge/Type-tool-lightgrey)
@@ -251,11 +239,11 @@ All resources are alphabetically organized and labeled, making it simple to loca
 - **[Unicorn](https://github.com/unicorn-engine/unicorn)**
     - Description: nan
     - Type: ![Type: emulator](https://img.shields.io/badge/Type-emulator-lightgrey)
-    - Purpose: ![Purpose: emulator](https://img.shields.io/badge/Purpose-emulator-blue)
+    - Purpose: ![Purpose: emulation](https://img.shields.io/badge/Purpose-emulation-blue)
 - **[unicornafl](https://github.com/AFLplusplus/unicornafl)**
     - Description: AFL-based fuzzer integrated with Unicorn
     - Type: ![Type: tool](https://img.shields.io/badge/Type-tool-lightgrey)
-    - Purpose: ![Purpose: fuzzing%20via%20emulator](https://img.shields.io/badge/Purpose-fuzzing%20via%20emulator-blue)
+    - Purpose: ![Purpose: fuzzing%20firmware](https://img.shields.io/badge/Purpose-fuzzing%20firmware-blue)
 - **[Z3 - SMT solver](https://github.com/Z3Prover/z3)**
     - Description: symbolic execution
     - Type: ![Type: tool](https://img.shields.io/badge/Type-tool-lightgrey)
