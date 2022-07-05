@@ -5,6 +5,7 @@ on:
       - main
     paths:
       - "resources.csv"
+      - "papers.csv"
 
 jobs:
   build:
